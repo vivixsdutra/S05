@@ -220,17 +220,6 @@
             transform: translateY(-2px);
         }
         
-        .screenshot-placeholder {
-            background: #e9ecef;
-            border: 3px dashed #adb5bd;
-            border-radius: 15px;
-            padding: 60px;
-            text-align: center;
-            color: #6c757d;
-            font-size: 1.1em;
-            margin-top: 20px;
-        }
-        
         .diagram-box {
             background: white;
             border: 2px solid #667eea;
@@ -362,6 +351,24 @@
             font-size: 0.9em;
             color: #495057;
             margin-top: 8px;
+        }
+
+        /* Telas do projeto */
+        .screenshot-box {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .screenshot-img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .screenshot-caption {
+            margin-top: 12px;
+            font-size: 0.95em;
+            color: #495057;
         }
         
         @media (max-width: 768px) {
@@ -752,7 +759,7 @@
             </div>
         </div>
         
-        <!-- WIREFRAMES ATUALIZADOS COM OS PRINTS -->
+        <!-- WIREFRAMES -->
         <div class="section">
             <h2 class="section-title">Wireframe</h2>
             <p>Os wireframes abaixo representam o fluxo principal da funcionalidade “Mercado de Trabalho” dentro do aplicativo:</p>
@@ -785,11 +792,21 @@
             </div>
         </div>
         
+        <!-- TELAS DO PROJETO -->
         <div class="section">
             <h2 class="section-title">Telas do Projeto</h2>
-            <div class="screenshot-placeholder">
-                <p><strong>🖥️ Inserir aqui screenshots do protótipo funcional</strong></p>
-                <p style="margin-top: 10px; font-size: 0.9em;">Capturar telas do CodePen mostrando a funcionalidade implementada</p>
+
+            <div class="screenshot-box">
+                <!-- troque o src pelo nome real do arquivo do print final -->
+                <img 
+                    src="tela-mercado-trabalho.png" 
+                    alt="Tela do módulo Mercado de Trabalho - App Inatel"
+                    class="screenshot-img"
+                >
+                <p class="screenshot-caption">
+                    Tela do módulo <strong>Mercado de Trabalho</strong> integrada ao app do Inatel, mostrando saudação ao usuário,
+                    cards de disciplinas e o componente de vagas com filtros e listagem.
+                </p>
             </div>
         </div>
     </div>
